@@ -28,12 +28,11 @@ jobs:
 
     - name: Run Python script
       run: |
-        cd APIs/
-        python uplinks.py
+        python main.py
 
     - name: Check for changes and commit
       run: |
-        git add APIs/uplinks.txt
+        git add uplinks.txt
         git diff --staged --quiet
         if ($LASTEXITCODE -ne 0) {
           git commit -m "Update output.txt"
