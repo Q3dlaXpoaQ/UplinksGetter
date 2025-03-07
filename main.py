@@ -64,7 +64,7 @@ if __name__ == "__main__":
     span1, span2 = get_vpn_info()
 
     try:
-        with open("index.html", "w", encoding="utf-8") as f:
+        with open("index", "w", encoding="utf-8") as f:
             if span1 and span2:
                 f.write(f"{span1}\n")
                 f.write(f"{span2}\n")
