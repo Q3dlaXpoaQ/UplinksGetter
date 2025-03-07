@@ -2,8 +2,7 @@ name: Update Uplinks
 
 on:
   schedule:
-    - cron: '0 * * * *'  # 每小时的第 0 分钟运行
-
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
